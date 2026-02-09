@@ -1,251 +1,515 @@
-Terms of Service
-Last Updated: December 6, 2025 | Version: 2.0 (Updated Payment Terms for ACH & Fee Transparency)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - The HOA Wiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-1. Acceptance of Terms
-By accessing or using The HOA Wiz mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+            padding: 20px;
+        }
 
-2. Description of Service
-The HOA Wiz provides a comprehensive homeowners association (HOA) management platform that enables:
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
 
-Residents to pay dues, submit maintenance requests, view documents, and participate in community activities
-Board Members to manage work orders, violations, financials, and community operations
-Vendors to bid on work orders, submit quotes, and manage invoices
-Administrators to oversee entire community operations
-3. User Accounts and Registration
-3.1 Account Creation
-You must provide accurate, current, and complete information during registration
-You are responsible for maintaining the confidentiality of your account credentials
-You must be at least 18 years old to use this App
-One account per person; no account sharing
-3.2 Account Types
-Resident: Must provide valid property/unit address and community code
-Board Member: Must be verified by existing board members or administrator
-Vendor: Must provide business information, licensing, and insurance details
-Administrator: Invited by HOA management only
-3.3 Account Security
-You are responsible for all activities under your account
-Notify us immediately of any unauthorized access
-We reserve the right to suspend accounts showing suspicious activity
-4. User Responsibilities
-4.1 Acceptable Use
-You agree to:
+        h1 {
+            color: #1d1d1f;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
 
-Provide truthful and accurate information
-Use the App only for lawful purposes
-Respect other users' privacy and rights
-Comply with your HOA's CC&Rs, bylaws, and rules
-Upload only content you have the right to share
-4.2 Prohibited Activities
-You agree NOT to:
+        h2 {
+            color: #1d1d1f;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
 
-Harass, threaten, or intimidate other users
-Upload malicious code, viruses, or harmful content
-Attempt to gain unauthorized access to the system
-Use the App for commercial purposes unrelated to HOA management
-Submit false maintenance requests or violation reports
-Impersonate others or misrepresent your identity
-5. Payment Terms
-5.1 Payment Processing Overview
-All payments are processed securely through Stripe, a PCI-DSS Level 1 certified payment processor
-We never store full credit card numbers or bank account details on our servers
-Payment processing is subject to Stripe's Terms of Service and Privacy Policy
-You authorize us to process payments on behalf of your HOA
-5.2 Payment Methods
-5.2.1 Available Payment Options
-We offer two payment methods for HOA dues and assessments:
+        h3 {
+            color: #424245;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
 
-ACH/Bank Account Payments:
+        p {
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
 
-Direct debit from your bank account
-Processing fee: 0.8% of transaction amount, capped at $5.00
-Typically takes 3-5 business days to process
-Lower cost option for residents
-Credit/Debit Card Payments:
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
 
-Immediate payment processing
-Processing fee: 2.9% + $0.30 per transaction
-Higher cost due to card network fees
-Provides instant payment confirmation
-5.2.2 Fee Transparency
-Processing fees are clearly disclosed before payment confirmation
-You will see the exact fee amount and total cost before completing any payment
-Fees are passed through from Stripe at cost; we do not mark up payment processing fees
-Fees may vary based on payment method, transaction amount, and card type
-You have the right to choose which payment method to use
-5.2.3 Saved Payment Methods
-You may securely save payment methods for future use
-Saved payment information is tokenized and stored by Stripe, not on our servers
-You can add, remove, or update saved payment methods at any time
-Deleting a saved payment method does not cancel recurring payments or AutoPay (see Section 5.5)
-5.3 HOA Dues and Assessments
-5.3.1 Payment Obligations
-Residents agree to pay HOA dues, special assessments, and fines as determined by their association
-Payment amounts and due dates are set by your HOA board, not by us
-Late fees, interest charges, and penalties are determined by your HOA's bylaws and governing documents
-You remain responsible for all payment obligations even if:
-The App experiences technical issues
-Payment processing fails
-Your saved payment method expires or is declined
-5.3.2 Payment Authorization
-By submitting a payment through the App, you:
+        li {
+            margin-bottom: 8px;
+        }
 
-Authorize us to charge your selected payment method for the amount shown
-Confirm that you are authorized to use the selected payment method
-Agree to pay any applicable processing fees disclosed at checkout
-Acknowledge that payments are final once processed (subject to HOA refund policies)
-5.3.3 Failed Payments
-If a payment fails:
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
 
-You will receive immediate notification via push notification and email
-You remain responsible for the underlying payment obligation
-Your HOA may assess late fees per their governing documents
-Repeated failed payments may result in account restrictions or suspension
-ACH payments may fail due to insufficient funds, closed accounts, or invalid routing numbers
-Card payments may fail due to insufficient funds, expired cards, or fraud detection
-5.4 Vendor Payments
-5.4.1 Vendor Payment Processing
-Vendors receive payment via Stripe Connect
-Payment timing and amounts are determined by the HOA board
-Vendors are responsible for their own Stripe Connect account setup and compliance
-Standard Stripe Connect processing fees apply to vendor payments
-5.4.2 Vendor Payment Disputes
-Payment disputes must be resolved directly with the HOA
-We facilitate the payment transfer but do not arbitrate disputes
-Chargebacks and payment reversals are subject to Stripe's policies
-5.5 AutoPay and Recurring Payments
-5.5.1 AutoPay Enrollment
-AutoPay enrollment is completely optional
-You can enroll in AutoPay for recurring HOA dues payments
-AutoPay attempts to charge your selected payment method automatically on the due date
-You will receive confirmation notifications for each successful AutoPay transaction
-5.5.2 Managing AutoPay
-You can cancel AutoPay at any time through the App settings
-Cancellation takes effect immediately but does not cancel existing payment obligations
-You can change your AutoPay payment method at any time
-If your saved payment method expires or is removed, AutoPay will fail and you will be notified
-5.5.3 AutoPay Failures
-If an AutoPay payment fails, you will be notified immediately
-AutoPay may retry the payment based on your HOA's settings
-You remain responsible for paying dues even if AutoPay fails
-Failed AutoPay does not exempt you from late fees or penalties
-5.6 Refunds and Cancellations
-5.6.1 Refund Policies
-Refund policies are determined solely by your HOA, not by us
-To request a refund, contact your HOA board directly
-We will process approved refunds within 5-10 business days
-Refunds are subject to Stripe's refund processing timeline
-Processing fees are generally non-refundable
-5.6.2 Payment Cancellation
-Pending payments can only be cancelled before they are processed by Stripe
-ACH payments can sometimes be cancelled within the first 24 hours
-Card payments are typically processed immediately and cannot be cancelled
-Contact your HOA immediately if you need to cancel or dispute a payment
-5.7 Chargebacks and Disputes
-5.7.1 Chargeback Policy
-Chargebacks should only be filed for unauthorized or fraudulent transactions
-Filing a chargeback for a legitimate HOA obligation may:
-Violate your HOA's governing documents
-Result in additional fees and penalties from your HOA
-Lead to account suspension or legal action
-Disputed charges should first be resolved with your HOA board
-5.7.2 Dispute Resolution
-Payment amount disputes must be resolved with your HOA board
-Processing fee disputes should be directed to us at thehoawiz@gmail.com
-Stripe-related issues should be reported to Stripe customer support
-We will cooperate with legitimate chargeback investigations
-5.8 Payment Security
-5.8.1 Security Measures
-All payment data is encrypted in transit using TLS 1.2 or higher
-Payment information is tokenized and stored securely by Stripe
-We employ fraud detection and prevention measures
-Suspicious transactions may be flagged or blocked for verification
-5.8.2 Your Responsibilities
-Keep your account credentials secure
-Review all payment confirmations for accuracy
-Report unauthorized transactions immediately
-Ensure your payment methods have sufficient funds
-Update expired or invalid payment methods promptly
-5.9 Tax Reporting
-HOA dues payments may have tax implications
-We do not provide tax advice
-Consult with a tax professional regarding the deductibility of HOA payments
-We may provide transaction records upon request for your tax records
-Vendors are responsible for their own tax reporting and compliance
-6. Privacy and Data Protection
-Your use of the App is also governed by our Privacy Policy, which describes how we collect, use, and protect your personal information. By using the App, you consent to our Privacy Policy.
+        a:hover {
+            text-decoration: underline;
+        }
 
-See our full Privacy Policy at: https://thehoawiz.github.io/legal/privacy-policy.html
+        .updated {
+            color: #86868b;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
 
-7. Third-Party Services
-The App integrates with third-party services including Stripe (payments), Plaid (banking), Firebase (notifications), and AI services (OpenAI, Anthropic). Use of these services is subject to their respective terms of service.
+        .contact-box {
+            background: #f5f5f7;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
 
-8. Disclaimers and Limitations
-8.1 Service Availability
-We strive for 99.9% uptime but do not guarantee uninterrupted service
-Maintenance windows may require temporary service interruptions
-We are not liable for service disruptions
-8.2 No Warranties
-THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+        .contact-box strong {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-8.3 HOA Relationship
-We are a technology provider, not your HOA's legal representative
-We do not make decisions about dues, violations, or rules
-We do not provide legal, financial, or tax advice
-HOA governance is the responsibility of your board
-8.4 Limitation of Liability
-TO THE MAXIMUM EXTENT PERMITTED BY LAW:
+        hr {
+            border: none;
+            border-top: 1px solid #d2d2d7;
+            margin: 30px 0;
+        }
 
-We are not liable for indirect, incidental, or consequential damages
-Our total liability is limited to $100 or the amount you paid us in the past 12 months (whichever is greater)
-We are not liable for HOA decisions, payment disputes, or vendor performance
-9. Indemnification
-You agree to indemnify and hold harmless The HOA Wiz (Taylor Shipley), its employees, contractors, and agents from any claims, damages, or expenses arising from:
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
 
-Your violation of these Terms
-Your violation of any laws or regulations
-Your violation of others' rights
-Content you upload to the App
-10. Termination
-10.1 By You
-You may close your account at any time
-Contact support to request account deletion
-Some data may be retained per our Privacy Policy
-10.2 By Us
-We may suspend or terminate your account if:
+            h1 {
+                font-size: 2em;
+            }
 
-You violate these Terms
-You engage in fraudulent activity
-Your account is inactive for 2+ years
-Required by law or HOA request
-11. Dispute Resolution
-11.1 Governing Law
-These Terms are governed by the laws of the State of California, without regard to conflict of law principles.
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms of Service</h1>
+        <p class="updated"><strong>Last Updated:</strong> February 8, 2026 | <strong>Version:</strong> 2.1 (Added SMS/Text Messaging Terms)</p>
 
-11.2 Arbitration Agreement
-Any disputes arising from these Terms or the App will be resolved through binding arbitration, except:
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing or using The HOA Wiz mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
 
-Small claims court disputes (under $10,000)
-Intellectual property disputes
-Emergency injunctive relief
-11.3 Venue
-Any legal actions not subject to arbitration must be brought in courts located in Los Angeles County, California.
+        <h2>2. Description of Service</h2>
+        <p>The HOA Wiz provides a comprehensive homeowners association (HOA) management platform that enables:</p>
+        <ul>
+            <li><strong>Residents</strong> to pay dues, submit maintenance requests, view documents, and participate in community activities</li>
+            <li><strong>Board Members</strong> to manage work orders, violations, financials, and community operations</li>
+            <li><strong>Vendors</strong> to bid on work orders, submit quotes, and manage invoices</li>
+            <li><strong>Administrators</strong> to oversee entire community operations</li>
+        </ul>
 
-12. Changes to Terms
-We may modify these Terms at any time. We will notify you of significant changes via email, push notification, or in-app banner. Changes take effect 30 days after notification. Continued use of the App constitutes acceptance.
+        <h2>3. User Accounts and Registration</h2>
 
-Contact Us
-For questions about these Terms of Service:
+        <h3>3.1 Account Creation</h3>
+        <ul>
+            <li>You must provide accurate, current, and complete information during registration</li>
+            <li>You are responsible for maintaining the confidentiality of your account credentials</li>
+            <li>You must be at least 18 years old to use this App</li>
+            <li>One account per person; no account sharing</li>
+        </ul>
 
-The HOA Wiz
+        <h3>3.2 Account Types</h3>
+        <ul>
+            <li><strong>Resident:</strong> Must provide valid property/unit address and community code</li>
+            <li><strong>Board Member:</strong> Must be verified by existing board members or administrator</li>
+            <li><strong>Vendor:</strong> Must provide business information, licensing, and insurance details</li>
+            <li><strong>Administrator:</strong> Invited by HOA management only</li>
+        </ul>
 
-Owner:
-Taylor Shipley
-Email:
-thehoawiz@gmail.com
-Phone:
-(310) 430-5116
-Mail:
-1669 Michael Ln., Pacific Palisades, CA 90034
+        <h3>3.3 Account Security</h3>
+        <ul>
+            <li>You are responsible for all activities under your account</li>
+            <li>Notify us immediately of any unauthorized access</li>
+            <li>We reserve the right to suspend accounts showing suspicious activity</li>
+        </ul>
 
-By using The HOA Wiz, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
-Version 2.0 (Updated Payment Terms for ACH & Fee Transparency) | Last Updated: December 6, 2025
+        <h2>4. User Responsibilities</h2>
+
+        <h3>4.1 Acceptable Use</h3>
+        <p>You agree to:</p>
+        <ul>
+            <li>Provide truthful and accurate information</li>
+            <li>Use the App only for lawful purposes</li>
+            <li>Respect other users' privacy and rights</li>
+            <li>Comply with your HOA's CC&Rs, bylaws, and rules</li>
+            <li>Upload only content you have the right to share</li>
+        </ul>
+
+        <h3>4.2 Prohibited Activities</h3>
+        <p>You agree NOT to:</p>
+        <ul>
+            <li>Harass, threaten, or intimidate other users</li>
+            <li>Upload malicious code, viruses, or harmful content</li>
+            <li>Attempt to gain unauthorized access to the system</li>
+            <li>Use the App for commercial purposes unrelated to HOA management</li>
+            <li>Submit false maintenance requests or violation reports</li>
+            <li>Impersonate others or misrepresent your identity</li>
+        </ul>
+
+        <h2>5. Payment Terms</h2>
+
+        <h3>5.1 Payment Processing Overview</h3>
+        <ul>
+            <li>All payments are processed securely through Stripe, a PCI-DSS Level 1 certified payment processor</li>
+            <li>We never store full credit card numbers or bank account details on our servers</li>
+            <li>Payment processing is subject to Stripe's Terms of Service and Privacy Policy</li>
+            <li>You authorize us to process payments on behalf of your HOA</li>
+        </ul>
+
+        <h3>5.2 Payment Methods</h3>
+
+        <h4>5.2.1 Available Payment Options</h4>
+        <p>We offer two payment methods for HOA dues and assessments:</p>
+
+        <p><strong>ACH/Bank Account Payments:</strong></p>
+        <ul>
+            <li>Direct debit from your bank account</li>
+            <li>Processing fee: 0.8% of transaction amount, capped at $5.00</li>
+            <li>Typically takes 3-5 business days to process</li>
+            <li>Lower cost option for residents</li>
+        </ul>
+
+        <p><strong>Credit/Debit Card Payments:</strong></p>
+        <ul>
+            <li>Immediate payment processing</li>
+            <li>Processing fee: 2.9% + $0.30 per transaction</li>
+            <li>Higher cost due to card network fees</li>
+            <li>Provides instant payment confirmation</li>
+        </ul>
+
+        <h4>5.2.2 Fee Transparency</h4>
+        <ul>
+            <li><strong>Processing fees are clearly disclosed before payment confirmation</strong></li>
+            <li>You will see the exact fee amount and total cost before completing any payment</li>
+            <li>Fees are passed through from Stripe at cost; we do not mark up payment processing fees</li>
+            <li>Fees may vary based on payment method, transaction amount, and card type</li>
+            <li>You have the right to choose which payment method to use</li>
+        </ul>
+
+        <h4>5.2.3 Saved Payment Methods</h4>
+        <ul>
+            <li>You may securely save payment methods for future use</li>
+            <li>Saved payment information is tokenized and stored by Stripe, not on our servers</li>
+            <li>You can add, remove, or update saved payment methods at any time</li>
+            <li>Deleting a saved payment method does not cancel recurring payments or AutoPay (see Section 5.5)</li>
+        </ul>
+
+        <h3>5.3 HOA Dues and Assessments</h3>
+
+        <h4>5.3.1 Payment Obligations</h4>
+        <ul>
+            <li>Residents agree to pay HOA dues, special assessments, and fines as determined by their association</li>
+            <li>Payment amounts and due dates are set by your HOA board, not by us</li>
+            <li>Late fees, interest charges, and penalties are determined by your HOA's bylaws and governing documents</li>
+            <li>You remain responsible for all payment obligations even if:
+                <ul>
+                    <li>The App experiences technical issues</li>
+                    <li>Payment processing fails</li>
+                    <li>Your saved payment method expires or is declined</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>5.3.2 Payment Authorization</h4>
+        <p>By submitting a payment through the App, you:</p>
+        <ul>
+            <li>Authorize us to charge your selected payment method for the amount shown</li>
+            <li>Confirm that you are authorized to use the selected payment method</li>
+            <li>Agree to pay any applicable processing fees disclosed at checkout</li>
+            <li>Acknowledge that payments are final once processed (subject to HOA refund policies)</li>
+        </ul>
+
+        <h4>5.3.3 Failed Payments</h4>
+        <p>If a payment fails:</p>
+        <ul>
+            <li>You will receive immediate notification via push notification and email</li>
+            <li>You remain responsible for the underlying payment obligation</li>
+            <li>Your HOA may assess late fees per their governing documents</li>
+            <li>Repeated failed payments may result in account restrictions or suspension</li>
+            <li>ACH payments may fail due to insufficient funds, closed accounts, or invalid routing numbers</li>
+            <li>Card payments may fail due to insufficient funds, expired cards, or fraud detection</li>
+        </ul>
+
+        <h3>5.4 Vendor Payments</h3>
+
+        <h4>5.4.1 Vendor Payment Processing</h4>
+        <ul>
+            <li>Vendors receive payment via Stripe Connect</li>
+            <li>Payment timing and amounts are determined by the HOA board</li>
+            <li>Vendors are responsible for their own Stripe Connect account setup and compliance</li>
+            <li>Standard Stripe Connect processing fees apply to vendor payments</li>
+        </ul>
+
+        <h4>5.4.2 Vendor Payment Disputes</h4>
+        <ul>
+            <li>Payment disputes must be resolved directly with the HOA</li>
+            <li>We facilitate the payment transfer but do not arbitrate disputes</li>
+            <li>Chargebacks and payment reversals are subject to Stripe's policies</li>
+        </ul>
+
+        <h3>5.5 AutoPay and Recurring Payments</h3>
+
+        <h4>5.5.1 AutoPay Enrollment</h4>
+        <ul>
+            <li>AutoPay enrollment is completely optional</li>
+            <li>You can enroll in AutoPay for recurring HOA dues payments</li>
+            <li>AutoPay attempts to charge your selected payment method automatically on the due date</li>
+            <li>You will receive confirmation notifications for each successful AutoPay transaction</li>
+        </ul>
+
+        <h4>5.5.2 Managing AutoPay</h4>
+        <ul>
+            <li>You can cancel AutoPay at any time through the App settings</li>
+            <li>Cancellation takes effect immediately but does not cancel existing payment obligations</li>
+            <li>You can change your AutoPay payment method at any time</li>
+            <li>If your saved payment method expires or is removed, AutoPay will fail and you will be notified</li>
+        </ul>
+
+        <h4>5.5.3 AutoPay Failures</h4>
+        <ul>
+            <li>If an AutoPay payment fails, you will be notified immediately</li>
+            <li>AutoPay may retry the payment based on your HOA's settings</li>
+            <li><strong>You remain responsible for paying dues even if AutoPay fails</strong></li>
+            <li>Failed AutoPay does not exempt you from late fees or penalties</li>
+        </ul>
+
+        <h3>5.6 Refunds and Cancellations</h3>
+
+        <h4>5.6.1 Refund Policies</h4>
+        <ul>
+            <li><strong>Refund policies are determined solely by your HOA, not by us</strong></li>
+            <li>To request a refund, contact your HOA board directly</li>
+            <li>We will process approved refunds within 5-10 business days</li>
+            <li>Refunds are subject to Stripe's refund processing timeline</li>
+            <li>Processing fees are generally non-refundable</li>
+        </ul>
+
+        <h4>5.6.2 Payment Cancellation</h4>
+        <ul>
+            <li>Pending payments can only be cancelled before they are processed by Stripe</li>
+            <li>ACH payments can sometimes be cancelled within the first 24 hours</li>
+            <li>Card payments are typically processed immediately and cannot be cancelled</li>
+            <li>Contact your HOA immediately if you need to cancel or dispute a payment</li>
+        </ul>
+
+        <h3>5.7 Chargebacks and Disputes</h3>
+
+        <h4>5.7.1 Chargeback Policy</h4>
+        <ul>
+            <li><strong>Chargebacks should only be filed for unauthorized or fraudulent transactions</strong></li>
+            <li>Filing a chargeback for a legitimate HOA obligation may:
+                <ul>
+                    <li>Violate your HOA's governing documents</li>
+                    <li>Result in additional fees and penalties from your HOA</li>
+                    <li>Lead to account suspension or legal action</li>
+                </ul>
+            </li>
+            <li>Disputed charges should first be resolved with your HOA board</li>
+        </ul>
+
+        <h4>5.7.2 Dispute Resolution</h4>
+        <ul>
+            <li>Payment amount disputes must be resolved with your HOA board</li>
+            <li>Processing fee disputes should be directed to us at thehoawiz@gmail.com</li>
+            <li>Stripe-related issues should be reported to Stripe customer support</li>
+            <li>We will cooperate with legitimate chargeback investigations</li>
+        </ul>
+
+        <h3>5.8 Payment Security</h3>
+
+        <h4>5.8.1 Security Measures</h4>
+        <ul>
+            <li>All payment data is encrypted in transit using TLS 1.2 or higher</li>
+            <li>Payment information is tokenized and stored securely by Stripe</li>
+            <li>We employ fraud detection and prevention measures</li>
+            <li>Suspicious transactions may be flagged or blocked for verification</li>
+        </ul>
+
+        <h4>5.8.2 Your Responsibilities</h4>
+        <ul>
+            <li>Keep your account credentials secure</li>
+            <li>Review all payment confirmations for accuracy</li>
+            <li>Report unauthorized transactions immediately</li>
+            <li>Ensure your payment methods have sufficient funds</li>
+            <li>Update expired or invalid payment methods promptly</li>
+        </ul>
+
+        <h3>5.9 Tax Reporting</h3>
+        <ul>
+            <li>HOA dues payments may have tax implications</li>
+            <li><strong>We do not provide tax advice</strong></li>
+            <li>Consult with a tax professional regarding the deductibility of HOA payments</li>
+            <li>We may provide transaction records upon request for your tax records</li>
+            <li>Vendors are responsible for their own tax reporting and compliance</li>
+        </ul>
+
+        <h2>6. SMS/Text Messaging Terms</h2>
+
+        <h3>6.1 Program Name</h3>
+        <p>The HOA Wiz SMS Verification Program</p>
+
+        <h3>6.2 Program Description</h3>
+        <p>The HOA Wiz sends one-time SMS verification codes (OTPs) for account authentication and identity verification when you sign up, log in, or verify your identity before submitting a vote within our HOA management mobile application.</p>
+
+        <h3>6.3 Consent and Opt-In</h3>
+        <p>By checking the SMS consent checkbox during account registration in The HOA Wiz app, you expressly consent to receive SMS verification codes from The HOA Wiz. Consent is not a condition of purchase or use of the application's non-SMS features.</p>
+
+        <h3>6.4 Message Frequency</h3>
+        <p>Message frequency varies. You will receive one SMS message per verification request that you initiate. Typical usage is one message at initial signup and occasional messages for login verification.</p>
+
+        <h3>6.5 Message and Data Rates</h3>
+        <p><strong>Message and data rates may apply.</strong> Please contact your mobile carrier for details on your messaging plan.</p>
+
+        <h3>6.6 Opt-Out Instructions</h3>
+        <p><strong>To stop receiving SMS messages from The HOA Wiz, reply STOP to any message you receive from us.</strong> You will receive one final confirmation message and no further SMS messages will be sent. You may also opt out by contacting us at <a href="mailto:thehoawiz@gmail.com">thehoawiz@gmail.com</a>.</p>
+
+        <h3>6.7 Help</h3>
+        <p><strong>For help, reply HELP to any message you receive from us.</strong> You may also contact us at:</p>
+        <div class="contact-box">
+            <p><strong>The HOA Wiz</strong><br>
+            <strong>Email:</strong> <a href="mailto:thehoawiz@gmail.com">thehoawiz@gmail.com</a><br>
+            <strong>Phone:</strong> (310) 430-5116</p>
+        </div>
+
+        <h3>6.8 Carrier Liability</h3>
+        <p><strong>Carriers are not liable for any delayed or undelivered messages.</strong></p>
+
+        <h3>6.9 Privacy</h3>
+        <p>Your mobile phone number and SMS consent information are governed by our Privacy Policy at <a href="https://thehoawiz.github.io/legal/privacy-policy.html">https://thehoawiz.github.io/legal/privacy-policy.html</a>. We do not share, sell, or disclose your mobile information to third parties or affiliates for marketing or promotional purposes.</p>
+
+        <h2>7. Privacy and Data Protection</h2>
+        <p>Your use of the App is also governed by our Privacy Policy, which describes how we collect, use, and protect your personal information. By using the App, you consent to our Privacy Policy.</p>
+
+        <p>See our full Privacy Policy at: <a href="https://thehoawiz.github.io/legal/privacy-policy.html">https://thehoawiz.github.io/legal/privacy-policy.html</a></p>
+
+        <h2>8. Third-Party Services</h2>
+        <p>The App integrates with third-party services including Stripe (payments), Plaid (banking), Firebase (notifications), Twilio (SMS), and AI services (OpenAI, Anthropic). Use of these services is subject to their respective terms of service.</p>
+
+        <h2>9. Disclaimers and Limitations</h2>
+
+        <h3>9.1 Service Availability</h3>
+        <ul>
+            <li>We strive for 99.9% uptime but do not guarantee uninterrupted service</li>
+            <li>Maintenance windows may require temporary service interruptions</li>
+            <li>We are not liable for service disruptions</li>
+        </ul>
+
+        <h3>9.2 No Warranties</h3>
+        <p>THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
+
+        <h3>9.3 HOA Relationship</h3>
+        <ul>
+            <li>We are a technology provider, not your HOA's legal representative</li>
+            <li>We do not make decisions about dues, violations, or rules</li>
+            <li>We do not provide legal, financial, or tax advice</li>
+            <li>HOA governance is the responsibility of your board</li>
+        </ul>
+
+        <h3>9.4 Limitation of Liability</h3>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
+        <ul>
+            <li>We are not liable for indirect, incidental, or consequential damages</li>
+            <li>Our total liability is limited to $100 or the amount you paid us in the past 12 months (whichever is greater)</li>
+            <li>We are not liable for HOA decisions, payment disputes, or vendor performance</li>
+        </ul>
+
+        <h2>10. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless The HOA Wiz (Taylor Shipley), its employees, contractors, and agents from any claims, damages, or expenses arising from:</p>
+        <ul>
+            <li>Your violation of these Terms</li>
+            <li>Your violation of any laws or regulations</li>
+            <li>Your violation of others' rights</li>
+            <li>Content you upload to the App</li>
+        </ul>
+
+        <h2>11. Termination</h2>
+
+        <h3>11.1 By You</h3>
+        <ul>
+            <li>You may close your account at any time</li>
+            <li>Contact support to request account deletion</li>
+            <li>Some data may be retained per our Privacy Policy</li>
+        </ul>
+
+        <h3>11.2 By Us</h3>
+        <p>We may suspend or terminate your account if:</p>
+        <ul>
+            <li>You violate these Terms</li>
+            <li>You engage in fraudulent activity</li>
+            <li>Your account is inactive for 2+ years</li>
+            <li>Required by law or HOA request</li>
+        </ul>
+
+        <h2>12. Dispute Resolution</h2>
+
+        <h3>12.1 Governing Law</h3>
+        <p>These Terms are governed by the laws of the State of California, without regard to conflict of law principles.</p>
+
+        <h3>12.2 Arbitration Agreement</h3>
+        <p>Any disputes arising from these Terms or the App will be resolved through binding arbitration, except:</p>
+        <ul>
+            <li>Small claims court disputes (under $10,000)</li>
+            <li>Intellectual property disputes</li>
+            <li>Emergency injunctive relief</li>
+        </ul>
+
+        <h3>12.3 Venue</h3>
+        <p>Any legal actions not subject to arbitration must be brought in courts located in Los Angeles County, California.</p>
+
+        <h2>13. Changes to Terms</h2>
+        <p>We may modify these Terms at any time. We will notify you of significant changes via email, push notification, or in-app banner. Changes take effect 30 days after notification. Continued use of the App constitutes acceptance.</p>
+
+        <hr>
+
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <p><strong>For questions about these Terms of Service:</strong></p>
+            <p><strong>The HOA Wiz</strong><br>
+            <strong>Owner:</strong> Taylor Shipley<br>
+            <strong>Email:</strong> <a href="mailto:thehoawiz@gmail.com">thehoawiz@gmail.com</a><br>
+            <strong>Phone:</strong> (310) 430-5116<br>
+            <strong>Mail:</strong> 1669 Michael Ln., Pacific Palisades, CA 90034</p>
+        </div>
+
+        <hr>
+
+        <p style="text-align: center; color: #86868b; margin-top: 40px;">
+            <strong>By using The HOA Wiz, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</strong><br>
+            Version 2.0 (Updated Payment Terms for ACH & Fee Transparency) | Last Updated: December 6, 2025
+        </p>
+    </div>
+</body>
+</html>
